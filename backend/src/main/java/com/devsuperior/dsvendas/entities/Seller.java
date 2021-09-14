@@ -15,7 +15,7 @@ import javax.persistence.Table;
 public class Seller {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private long id;
+	private Long id;
 	private String name;
 	
 	@ManyToMany(mappedBy = "seller")
@@ -25,16 +25,16 @@ public class Seller {
 		
 	}
 
-	public Seller(long id, String name) {
+	public Seller(Long id, String name) {
         this.id = id;
 		this.name = name;
 	}
 
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(long id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
